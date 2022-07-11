@@ -1,0 +1,14 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/dvir/Documents/OS/OS--Ex6'
+gcc -c main1.c -o main1.o
+gcc main1.o -o main1 -pthread
+gcc -c client1.c -o client1.o
+gcc client1.o -o client1 
+g++ guard.cpp -o guard -pthread
+g++ singleton.cpp -o singleton -pthread
+gcc -c reactor.c -o reactor.o
+gcc reactor.o  -o reactor -pthread
+gcc -c pollclient.c -o pollclient.o
+gcc pollclient.o  -o clientr -pthread
+make: Leaving directory '/home/dvir/Documents/OS/OS--Ex6'
+ 

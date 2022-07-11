@@ -1,0 +1,9 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/dvir/Documents/OS/OS--Ex1'
+gcc -c main.c -o main.o
+gcc -c client.c -o client.o
+gcc -Wall -Werror -g main.o client.o -o main
+gcc -c server.c -o server.o
+gcc -Wall -Werror -g server.o -o server
+make: Leaving directory '/home/dvir/Documents/OS/OS--Ex1'
+ 
